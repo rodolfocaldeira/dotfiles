@@ -1,8 +1,14 @@
 # My (Rodolfo's) dotfiles
 
-## Instalation
+## Install
 
-Working on this as we speak...
+To install simply do:
+
+- `git clone git@bitbucket.org:rodolfocaldeira/dotfiles.git`
+- `cd dotfiles`
+- `sh install.sh` 
+
+The install script will symlink the files to your home directory.
 
 ## Thank you
 
