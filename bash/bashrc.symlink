@@ -22,6 +22,7 @@ alias bash-refresh=". ~/.bashrc"
 alias bash-clear-orig="rm -i ~/.*.orig"
 
 alias p="cd ~/Projects"
+alias logs="cd /private/var/log/"
 
 # ip addresses 
 # https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
