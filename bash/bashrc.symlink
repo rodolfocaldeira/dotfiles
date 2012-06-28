@@ -24,6 +24,8 @@ alias bash-clear-orig="rm -i ~/.*.orig"
 alias p="cd ~/Projects"
 alias logs="cd /private/var/log/"
 
+alias svn-rev="svn log -v --stop-on-copy"
+
 # ip addresses 
 # https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
