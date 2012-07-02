@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# backup.sh
+#
+# Backups folders to a remote drive
+# 
+# Based on Holman's
+#   https://gist.github.com/1549979
+
+
+
+# Your destination. My sparsebundle mounts to "backup".
+backup_location="/Volumes/Lacie2/Backup"
+
+# Directories to backup. Recursive, implied home (~) location.
+directories=(
+  Documents
+  Downloads
+  Dropbox
+  Movies
+  Music
+  Pictures
+  Projects
+)
+
+for directory in ${directories[@]}
+  do
+    rsync -avh --progress --delete ~/$directory $backup_location
+done
