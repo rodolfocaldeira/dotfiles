@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# backupL2ToL1.sh
+#
+# Backups some Lacie2 folders to Lacie1
+# 
+# Based on Holman's
+#   https://gist.github.com/1549979
+
+
+
+# Your destination. My sparsebundle mounts to "backup".
+backup_source="/Volumes/Lacie2/"
+backup_location="/Volumes/Lacie1/"
+
+# Directories to sync recursively.
+directories=(
+  Ebooks
+  Learning
+  School
+  Software
+  Work
+)
+
+for directory in ${directories[@]}
+  do
+    rsync -avh --progress --delete $backup_source$directory $backup_location
+done
