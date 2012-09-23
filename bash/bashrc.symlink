@@ -35,5 +35,5 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 
 # Paths
-export PATH="~/.bin:$PATH"
+export PATH="/usr/local/bin:~/.bin:$PATH"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
