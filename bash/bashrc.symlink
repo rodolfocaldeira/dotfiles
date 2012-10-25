@@ -1,43 +1,50 @@
 #!/bin/bash
 
-# Terminal colours
+
+# ==========================================================================
+# Terminal Colours
+# ==========================================================================
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+
+
+# ==========================================================================
 # Aliases
+# ==========================================================================
+
 alias ~="cd ~"
 alias ..="cd .."
 alias cd..="cd .."
-
 alias l="ls -la"
 alias ll="ls -l"
 alias la="ls -a"
-
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
-
 alias rm="rm -i"
-
-alias bash-refresh=". ~/.bashrc"
-alias bash-clear-orig="rm -i ~/.*.orig"
-
 alias p="cd ~/Projects"
-alias logs="cd /private/var/log/"
-
-alias svn-rev="svn log -v --stop-on-copy"
-
-alias flush-cache="sudo dscacheutil -flushcache"
-
-alias restart-apache="sudo /usr/sbin/apachectl restart"
-
-# ip addresses 
-# https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 
+# Prefixing the ones I can't never remember with _
+alias _bash-refresh=". ~/.bashrc"
+alias _bash-clear-orig="rm -i ~/.*.orig"
+alias _logs="cd /private/var/log/"
+alias _svn-rev="svn log -v --stop-on-copy"
+alias _flush-cache="sudo dscacheutil -flushcache"
+alias _restart-apache="sudo /usr/sbin/apachectl restart"
+alias _hosts="sudo vi /etc/hosts"
+
+# ip addresses - https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
+alias _ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias _localip="ipconfig getifaddr en1"
+alias _ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+
+
+# ==========================================================================
 # Paths
+# ==========================================================================
+
 export PATH="/usr/local/bin:~/.bin:$PATH"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
