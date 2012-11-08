@@ -35,10 +35,26 @@ alias _flush-cache="sudo dscacheutil -flushcache"
 alias _restart-apache="sudo /usr/sbin/apachectl restart"
 alias _hosts="sudo vi /etc/hosts"
 
-# ip addresses - https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
+## ip addresses - https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
 alias _ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias _localip="ipconfig getifaddr en1"
 alias _ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+
+
+# ==========================================================================
+# Bash History
+# http://blog.sanctum.geek.nz/better-bash-history/
+# http://www.thegeekstuff.com/2008/08/15-examples-to-master-linux-command-line-history/
+# ==========================================================================
+
+HISTFILESIZE=50000
+HISTSIZE=50000
+HISTTIMEFORMAT='%F %T '
+HISTCONTROL=ignoreboth
+HISTIGNORE='ls:bg:fg:history:pwd:l:p:la:ll'
+shopt -s cmdhist
+PROMPT_COMMAND='history -a'
 
 
 
