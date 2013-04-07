@@ -10,6 +10,8 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias p="cd ~/Projects"
+alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
