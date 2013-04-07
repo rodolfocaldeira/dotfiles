@@ -11,6 +11,8 @@ To install simply do:
 
 The install script will symlink the files to your home directory. That's it you're done.
 
+If you are a zsh fan, don't forget to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) first.
+
 ## Thank you
 
 I drew a lot of inspiration from the following projects, thanks for sharing :)
