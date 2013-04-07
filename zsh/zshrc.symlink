@@ -47,6 +47,4 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:~/.bin:$PATH"
 
 # add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin 
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
