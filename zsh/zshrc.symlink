@@ -7,11 +7,15 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ==========================================================================
+# Alias
+# ==========================================================================
+
 alias p="cd ~/Projects"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
+alias ws="open -a WebStorm"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -34,11 +38,10 @@ alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git sublime)
+plugins=(git sublime node npm)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
 
 # ==========================================================================
 # Paths
