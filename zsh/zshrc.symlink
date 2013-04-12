@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 # Alias
 # ==========================================================================
 
+alias c="clear"
 alias p="cd ~/Projects"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 alias ws="open -a WebStorm"
@@ -47,7 +48,9 @@ source $ZSH/oh-my-zsh.sh
 # Paths
 # ==========================================================================
 
-export PATH="/usr/local/bin:~/.bin:$PATH"
+export PATH="/usr/local/bin:~/.bin:/usr/local/share/npm/bin:$PATH"
+
+
 
 # add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
