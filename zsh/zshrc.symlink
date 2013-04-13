@@ -17,6 +17,9 @@ alias p="cd ~/Projects"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 alias ws="open -a WebStorm"
 
+topTen() {
+  cat ~/.zsh_history|cut -d ';' -f 2- 2>/dev/null| awk '{a[$1]++ } END{for(i in a){print a[i] " " i}}'|sort -rn|head
+}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
