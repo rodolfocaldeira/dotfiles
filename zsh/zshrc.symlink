@@ -14,6 +14,7 @@ ZSH_THEME="robbyrussell"
 
 alias c="clear"
 alias p="cd ~/Projects"
+alias l="ll"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 alias ws="open -a WebStorm"
 
