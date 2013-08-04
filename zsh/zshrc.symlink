@@ -22,6 +22,15 @@ topTen() {
   cat ~/.zsh_history|cut -d ';' -f 2- 2>/dev/null| awk '{a[$1]++ } END{for(i in a){print a[i] " " i}}'|sort -rn|head
 }
 
+# git
+
+alias ga="git add"
+alias gc="git commit"
+alias gs="git status"
+
+alias pg='ps waux | grep -v grep | grep'
+alias hg='history | grep'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -43,7 +52,7 @@ topTen() {
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git sublime node npm)
+plugins=(sublime node npm)
 
 source $ZSH/oh-my-zsh.sh
 
