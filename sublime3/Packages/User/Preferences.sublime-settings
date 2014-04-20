@@ -1,0 +1,7 @@
+{
+	// Columns in which to display vertical rulers
+	"rulers": [80],
+	
+	// The number of spaces a tab is considered equal to
+	"tab_size": 2,
+}
