@@ -1,14 +1,18 @@
 {
-	// Columns in which to display vertical rulers
-	"rulers": [80],
-	
-	// The number of spaces a tab is considered equal to
-	"tab_size": 2,
-
-	"highlight_modified_tabs": true,
-	"save_on_focus_lost": true,
-	"trim_trailing_white_space_on_save": true,
 	"auto_complete_commit_on_tab": true,
 	"draw_minimap_border": true,
-	"draw_white_space": "all",  
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"tab_size": 2,
+	"trim_trailing_white_space_on_save": true,
+  "theme": "Spacegray Eighties.sublime-theme",
+  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"
 }
