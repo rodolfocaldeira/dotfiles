@@ -1,5 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"draw_minimap_border": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -12,7 +13,6 @@
 	],
 	"save_on_focus_lost": true,
 	"tab_size": 2,
-	"trim_trailing_white_space_on_save": true,
-  "theme": "Spacegray Eighties.sublime-theme",
-  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"
+	"theme": "Spacegray Eighties.sublime-theme",
+	"trim_trailing_white_space_on_save": true
 }
