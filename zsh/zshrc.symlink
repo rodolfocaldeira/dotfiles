@@ -60,7 +60,7 @@ source $ZSH/oh-my-zsh.sh
 # Paths
 # ==========================================================================
 
-export PATH="/usr/local/bin:~/.bin:/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/bin:~/.bin:/usr/local/share/npm/bin:/usr/local/go_appengine:$PATH"
 
 
 
