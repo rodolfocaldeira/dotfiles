@@ -1,8 +1,13 @@
 {
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"BracketHighlighter",
 		"DocBlockr",
+		"Package Control",
 		"Theme - Spacegray"
 	]
 }
