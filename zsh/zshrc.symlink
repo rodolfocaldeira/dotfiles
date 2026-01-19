@@ -55,6 +55,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -90,6 +93,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias c="clear"
 alias p="cd ~/code"
+alias l="ls -la"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -a"
 alias l="ll"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
 
@@ -130,3 +137,5 @@ fi
 if [ -f /Users/rodolfo/local/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/rodolfo/local/google-cloud-sdk/completion.zsh.inc'
 fi
+
+
